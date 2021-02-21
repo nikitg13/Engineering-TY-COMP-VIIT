@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>BDA Mini Project</title>
+</head>
+<style>
+  .carousel-item {
+    height: 490px;
+  }
+
+  h5 {
+    height: 310px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 60px;
+    color: black;
+  }
+
+  p {
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+  }
+
+  img {
+    height: 500px;
+  }
+
+  .co {
+    color: white;
+  }
+
+  .em {
+    color: black;
+  }
+
+  h3 {
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  body {
+    background-color: rgb(39, 39, 39);
+    color: white;
+  }
+
+  .apple {
+    padding-left: 100px;
+  }
+
+  .apple2 {
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+
+  .apple3 {
+    padding-bottom: 20px;
+  }
+  .apple4{
+    font-size: 25px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .apple5{
+    padding-bottom: 20px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand apple" style="font-family: Georgia, 'Times New Roman', Times, serif;" href="#">BDA Mini
+        Project </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link apple" style="font-family: Georgia, 'Times New Roman', Times, serif;"
+              href="#1">Forecasting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link apple" style="font-family: Georgia, 'Times New Roman', Times, serif;" href="#2">GDP,
+              Corona_Stat & Unemployement </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link apple" style="font-family: Georgia, 'Times New Roman', Times, serif;" href="#3">Datasets
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- curser -->
+
+  <div id="carouselExampleCaptions" class="carousel slide apple3" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1513596846216-48ae70153834?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWNvbm9teXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Economy .. </h5>
+          <p>Due to the corona virus pandamic the Economy of oll over the world experienced huge drop...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1585912812840-b457972f28d0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDh8fGNvcm9uYXZpcnVzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="co">Corona ..</h5>
+          <p class="co">Daily stats indicates the effect of corona virus in various cities</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/jobs_660x450_070519112035.jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="em">Employment .. </h5>
+          <p class="em">The pandamic deepaly impacted the Employment of people all over the globe</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+
+
+  <div class="container">
+
+
+    
+
+    <!-- table -->
+    <table class=" table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Roll No</th>
+          <th scope="col">GR NO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Chetan</td>
+          <td>324017</td>
+          <td>21810350</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Nikit</td>
+          <td>324022</td>
+          <td>21810522</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Sahil</td>
+          <td>324032</td>
+          <td>21810533</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Kunal</td>
+          <td>324040</td>
+          <td>21810049</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>The Objectives</h3>
+    <p class="apple4">
+      To analyse the US economy and where it would have been if the pandemic did not occur.</p>
+     <p class="apple4"> To create dashboards using visualisation tools.</p>
+      <p class="apple4">i.Analysis of US economy if Pandemic did not Occur.
+        ii.Analysis of Actual situation in current pandemic
+        i.e. effects on GDP and Employment rate</p> 
+       <p class="apple4"> To deploy our results & analysis (i.e. Dashboards) on webpage.</p>
+      <p class="apple4 apple5">To analysing some factors that help us to understand economy and recession. To check whether we could predict the
+        recession.</p> 
+    </p>
+
+    <h3 id="1">This Tableau dashboard shows the trend and predicts the outcome using the Forecasting Model</h3>
+    <div class='tableauPlaceholder' id='viz1607486753503' style='position: relative'>
+      <noscript><a href='#'>
+          <img alt=' '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USEconomyAnalysisDashboard_16074865506450&#47;AnalysisofUSEconomy&#47;1_rss.png'
+            style='border: none' />
+        </a>
+      </noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='USEconomyAnalysisDashboard_16074865506450&#47;AnalysisofUSEconomy' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USEconomyAnalysisDashboard_16074865506450&#47;AnalysisofUSEconomy&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' /></object>
+    </div>
+    <h3 id="2">This Tableau dashboard shows what exactly happened to the GDP and Unemployement rate after COVID</h3>
+    <div class='tableauPlaceholder' id='viz1607486709616' style='position: relative'>
+      <noscript><a href='#'>
+          <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YH&#47;YHRSK75P3&#47;1_rss.png'
+            style='border: none' />
+        </a>
+      </noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared&#47;YHRSK75P3' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YH&#47;YHRSK75P3&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+      </object></div>
+
+    <!-- courasal -->
+
+    <h3 id="3">Datasets used in BDA Mini projects</h3>
+    <div id="carouselExampleControls" class="carousel slide apple2" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Screenshot (142).png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Screenshot (148).png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1607486753503');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1607486709616');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; }
+    else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; }
+    else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
